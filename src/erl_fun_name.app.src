@@ -1,0 +1,12 @@
+{application,  erl_fun_name,
+ [
+  {description, "Set for macro for erlang function name"},
+  {vsn, "1.0"},
+  {registered, []},
+  {applications, [
+                 ]},
+  {mod, {betinrun_app, []}},
+  {modules, [
+      ]},
+  {env, []}
+ ]}.

@@ -1,7 +1,7 @@
 -module(erl_fun_name).
 -export([parse_transform/2]). 
 
--include("erl_fun_name.hrl").
+-include("include/erl_fun_name.hrl").
 
 
 parse_transform(AST, _Options) -> [parse(T) || T <- AST]. 
