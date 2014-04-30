@@ -12,3 +12,4 @@
 -define(SET(Key, Value), ?MODULE:new(lists:keystore(Key, 1, Args, {Key, Value}))).
 -define(SET(Value), ?SET(?ERL_FUN_BINARY, Value)).
 
+

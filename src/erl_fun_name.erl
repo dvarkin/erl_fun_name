@@ -3,12 +3,11 @@
 
 -include("include/erl_fun_name.hrl").
 
-
 parse_transform(AST, _Options) -> [parse(T) || T <- AST]. 
 
 parse({function, _, FName, FArity, _} = T) ->
-	erl_syntax_lib:map(fun(TE) 
-						  -> parsemacro(FName, FArity, TE) end, T); 
+	erl_syntax_lib:map(fun () ->  end(TE) 
+					   -> parsemacro(FName, FArity, TE) end, T); 
 parse(T) -> T. 
 
 parsemacro(FName, FArity, T) ->
