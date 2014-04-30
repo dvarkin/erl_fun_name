@@ -9,6 +9,8 @@
 
 -define(GET_BY_NAME(Default), proplists:get_value(?ERL_FUN_BINARY, Args, Default)).
 -define(GET_BY_NAME, ?GET_BY_NAME(undefined)).
+
+%% deprecated in ERTS 16.
 -define(SET(Key, Value), ?MODULE:new(lists:keystore(Key, 1, Args, {Key, Value}))).
 -define(SET(Value), ?SET(?ERL_FUN_BINARY, Value)).
 
